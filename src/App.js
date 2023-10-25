@@ -1,11 +1,12 @@
+import { AppRouter } from './routes/app-router';
+import { Stack } from '@mui/material';
+import { Tabs } from './components/tabs';
+
 export const App = () => {
   return (
-    <div className="App">
-      <p>
-          Init
-        </p>
-    </div>
+    <Stack spacing={2}>
+      <Tabs />
+      <AppRouter />
+    </Stack>
   );
 }
-
-export default App;
